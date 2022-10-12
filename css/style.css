@@ -1,0 +1,7 @@
+.cont{
+    background-color: yellow;
+    width: 120px;
+    height: 120px;
+    border: 2px solid black;
+    background-image: -moz-element();
+}
