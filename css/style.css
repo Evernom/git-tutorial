@@ -1,7 +1,9 @@
 .cont{
     background-color: yellow;
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     border: 2px solid black;
-    background-image: -moz-element();
+    background-image: url(/img/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
