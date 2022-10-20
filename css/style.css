@@ -1,11 +1,30 @@
-.cont{
- height: 150px;
- width: calc(50% - 20px);
- margin: 10px;
- box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
-margin-left: auto;
-margin-right: auto;
-margin-top: 100px;
-background-color: tomato;
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9fd;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: tomato;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+  /*  Задаём значения перехода  */
+  transition-property: background-color, transform;
+  transition-duration: 500ms, 5s;
+  transition-timing-function: linear;
+  transition-delay: 0;
+}
+
+/* При ховере меняем значения анимируемых свойств */
+.box:hover {
+  background-color: teal;
+  transform: rotate(180deg);
+  cursor: pointer;
 }
