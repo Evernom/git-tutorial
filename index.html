@@ -8,12 +8,14 @@
     <title>Document</title>
 </head>
 <body>
-<h1>Move the mouse over the square</h1>
+  <button data-modal-open>відкрити вікно</button>
 
-<div class="box">
-  <div class="overlay">
-    <p>This content is hidden through transformation and only appears when hovering over <code>div.box</code></p>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima id, perferendis sapiente ab ex consectetur ut facere nostrum, eligendi necessitatibus mollitia nihil error amet cupiditate. Doloribus, excepturi! Inventore, aut cumque?</p>
+      <button data-modal-close>закрити вікно</button>
+    </div>
   </div>
-</div>
+  <script src="./js/modal.js"></script>
 </body>
 </html>
